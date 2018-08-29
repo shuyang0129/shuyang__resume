@@ -1,0 +1,50 @@
+////////////////////////////////////////////////////
+// COLOR
+////////////////////////////////////////////////////
+
+$purple-heart	: #7828B4;
+$electric-violet: #9013FE;
+$concrete		: #F2F2F2;
+$gallery		: #EBEBEB;
+$alto			: #D7D7D7;
+$dusty-gray		: #9B9B9B;
+$white			: #FFFFFF;
+$black			: #000000;
+
+$color__header_bg			: $purple-heart;
+$color__logo				: $white;
+$color__placeholder			: $dusty-gray;
+$color__search-bar_mobile	: $gallery;
+$color__body_bg				: $concrete;
+$color__shadow				: $alto;
+$color__card				: $white;
+$color__title				: $electric-violet;
+$color__category_bg			: $alto;
+
+////////////////////////////////////////////////////
+// TYPOGRAPHY
+////////////////////////////////////////////////////
+
+//Font size
+$font__size:(
+	s : 16px,
+	m : 20px,
+	l : 24px,
+	xl: 36px,
+);
+
+//Font weight
+$font__weight: (
+	light	: 300,
+	regular : 400,
+	bold	: 700,
+);
+
+
+
+////////////////////////////////////////////////////
+// SIZE
+////////////////////////////////////////////////////
+
+$head-bar__height_default	: 69px;
+$head-bar__height_medium	: 92px;

@@ -1,0 +1,43 @@
+////////////////////////////////////////////////////
+// VENDOR PREFIX
+////////////////////////////////////////////////////
+
+@mixin prefix($property, $value, $vendors: webkit moz ms o) {
+    @if $vendors {
+      @each $vendor in $vendors {
+        #{"-" + $vendor + "-" + $property}: #{$value};
+      }
+    }
+    #{$property}: #{$value};
+}
+
+
+
+////////////////////////////////////////////////////
+// FONT WEIGHT
+////////////////////////////////////////////////////
+
+@mixin font__weight($weight) {
+	@extend %font__weight_#{$weight};
+}
+
+
+
+////////////////////////////////////////////////////
+// FONT SIZE
+////////////////////////////////////////////////////
+
+@mixin font__size($level) {
+	@extend %font__size_#{$level};
+}
+
+////////////////////////////////////////////////////
+// INPUT PLACEHOLDER
+////////////////////////////////////////////////////
+
+@mixin placeholder {
+    &::placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
