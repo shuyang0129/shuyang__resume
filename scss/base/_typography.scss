@@ -26,3 +26,13 @@ header .line-on-side:after {
     background-color: white;
 }
 
+/*--Main Style--*/
+
+.subtitle {
+    font-weight     : 500;
+    font-size       : 14px;
+    color           : rgba($color: #000000, $alpha: 0.54);
+    text-align      : center;
+    text-transform  : uppercase;
+    margin          : 32px auto;
+}
