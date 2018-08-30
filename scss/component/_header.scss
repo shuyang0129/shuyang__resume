@@ -3,3 +3,23 @@ HEADER
 -----------------------------------------------------*/
 
 /*--Header--*/
+header {
+    @extend %center_center;
+    padding-left    : 30px;
+    padding-right   : 30px;
+    height          : 233px;
+    background      : linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+	                url(../img/banner-img.jpg) no-repeat bottom center;
+	@include prefix(background-size, cover, webkit moz o);
+}
+
+header .title {
+    padding : 12px 0;
+    border  : 1px solid white;
+    margin  : 8px 0;
+}
+
+header div {
+    width       : 100%;
+    max-width   : 516px;
+}

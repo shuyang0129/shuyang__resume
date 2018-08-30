@@ -3,3 +3,26 @@ TYPOGRAPHY
 -----------------------------------------------------*/
 
 /*--Basic Style--*/
+
+/*--Header Style--*/
+
+header {
+    text-transform  : uppercase;
+    text-align      : center;
+    color           : white;
+}
+
+header .title {
+    font-size       : 24px;
+}
+
+.caption {
+    font-size       : 12px;
+    word-spacing    : 40%;
+}
+
+header .line-on-side:before,
+header .line-on-side:after {
+    background-color: white;
+}
+
