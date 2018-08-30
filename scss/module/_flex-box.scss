@@ -172,7 +172,7 @@ FLEXBOX - FLEX ITEMS
 
 //flex-wrap
 @mixin flex-wrap($wrap) {
-  @if not index((nowrap, wrap, wrap-reverse), $wrap) {
+  @if not index((no-wrap, wrap, wrap-reverse), $wrap) {
       @warn "Input value should be 'no-wrap', 'wrap', 'wrap-reverse'.";
   }
   @extend %flex-wrap_#{$wrap};
