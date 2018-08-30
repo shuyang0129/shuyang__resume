@@ -1,0 +1,11 @@
+.portrait {
+    @extend %center_horizontal;
+    margin-top: -($portrait__size / 2);
+
+    img {
+        width: $portrait__size;
+        height: $portrait__size;
+        border-radius: 50%;
+        border: 3px solid white;
+    }
+}
