@@ -40,13 +40,39 @@ header .line-on-side:after {
 /*--Icon With Text Style--*/
 
 .icon-with-text {
-    font-weight: 400;
-    color: rgba($color: #000000, $alpha: 0.87);
-    font-size: 14px;
+    font-weight : 400;
+    color       : rgba($color: #000000, $alpha: 0.87);
+    font-size   : 14px;
     a:link,
     a:visited,
     a:active,
     a:hover {
-        color: inherit;
+        color   : inherit;
     }
+}
+
+/*--Education--*/
+
+.education__date {
+    color       : white;
+    line-height : 30px;
+}
+
+.education__heading {
+    font-weight     : 500;
+    font-size       : 14px;
+    letter-spacing  : 0.25;
+    line-height     : 28px;
+    color           : rgba($color: #000000, $alpha: 0.87);
+}
+
+.education__duration {
+    @extend .education__heading;
+    font-style : italic;
+}
+
+.education__description {
+    @extend .education__heading;
+    color      : rgba($color: #000000, $alpha: 0.54);
+    font-weight: 400;
 }
