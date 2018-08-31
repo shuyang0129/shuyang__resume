@@ -1,0 +1,43 @@
+/*-----------------------------------------------------
+WORK
+-----------------------------------------------------*/
+
+/*--Section | work section--*/
+
+.work__item {
+    margin-bottom       : 32px;
+}
+
+.section__work {
+    > :last-child {
+        margin-bottom   : 0;
+    }
+}
+
+.section__work .work__info_main {	
+	@include breakpoint($breakpoint) {		
+		//display: flex
+		-webkit-display        : flex;
+		-moz-display           : flex;
+		-ms-display            : flex;
+		display                : flex;
+		
+		//flex-direction: row
+		-webkit-flex-direction : row;
+		-moz-flex-direction    : row;
+		-ms-flex-direction     : row;
+		flex-direction         : row;
+    
+        //align-items: center
+		-webkit-align-items    : center;
+		-moz-align-items       : center;
+		-ms-align-items        : center;
+		align-items            : center;
+    }
+}
+
+.section__work .work__duration:before {	
+	@include breakpoint($breakpoint) {		
+		content: "\00a0\00a0/\00a0\00a0"
+    }
+}
