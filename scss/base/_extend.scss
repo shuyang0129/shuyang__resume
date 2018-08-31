@@ -63,3 +63,21 @@ SKILL BAR | default setting
 	height          : 100%;
 	background-color: $skill__bar_color;
 }
+
+
+
+/*-----------------------------------------------------
+Typography
+-----------------------------------------------------*/
+
+%text__transform__uppercase {
+    text-transform  : uppercase;
+}
+
+%font_heading {
+    font-weight     : 600;
+    font-size       : 14px;
+    letter-spacing  : 1px;
+    line-height     : 28px;
+    color           : rgba($color: #000000, $alpha: 0.87);
+}
