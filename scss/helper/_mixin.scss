@@ -41,3 +41,23 @@
     &::-moz-placeholder { @content; }
     &::-webkit-input-placeholder { @content; }
 }
+
+
+
+////////////////////////////////////////////////////
+// BREAKPOINTS
+////////////////////////////////////////////////////
+
+@mixin breakpoint($point) {
+  @if $point == windows_m {
+    @media (min-width: map-get($breakpoint, $point)) { @content; }
+  }
+ 
+  @else if $point == windows_l {
+    @media (min-width: map-get($breakpoint, $point)) { @content; }
+  }
+ 
+  @else {
+    @warn "Breakpoint mixin supports: windows_m, windows_l";
+  }
+}
