@@ -5,7 +5,7 @@ EDUCATION SECTION
 /*--Section | education section--*/
 
 .section__education .education__info_main {	
-	@include breakpoint(windows_l) {		
+	@include breakpoint($breakpoint) {		
 		//display: flex
 		-webkit-display        : flex;
 		-moz-display           : flex;
@@ -27,7 +27,7 @@ EDUCATION SECTION
 }
 
 .section__education .education__duration:before {	
-	@include breakpoint(windows_l) {		
+	@include breakpoint($breakpoint) {		
 		content: "\00a0\00a0/\00a0\00a0"
     }
 }
