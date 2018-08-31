@@ -51,3 +51,15 @@ TEXT FORMATTING
 	white-space   : nowrap;
 	text-overflow : ellipsis;
 }
+
+
+
+/*-----------------------------------------------------
+SKILL BAR | default setting
+-----------------------------------------------------*/
+
+%skill__level_def {
+	width           : 0%;
+	height          : 100%;
+	background-color: $skill__bar_color;
+}
